@@ -5,14 +5,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
-    height: 100vh;
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
+
 #logo {
   position: absolute;
   top: -50px; /* Adjust closer to the top */
@@ -23,7 +25,9 @@ body {
   padding: 0 20px; /* Add padding for spacing from edges */
 }
 
-.logo1, .paragraph, .logo2 {
+.logo1,
+.paragraph,
+.logo2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +47,7 @@ body {
   max-height: 250px;
   object-fit: contain;
 }
+
 .club {
   display: flex;
   flex-direction: column;
@@ -50,76 +55,128 @@ body {
   color: #f4c631;
   font-weight: bold;
   font-size: 24px; /* Adjust font size as desired */
-  padding: 0px;
-  /* max-width: 600px; Optional: limits width */
   margin: 0 auto;
   position: absolute; /* Positions element relative to page */
-  top: 150px; /* Adjust to move element closer to the top */
+  top: 120px; /* Adjust to move element closer to the top */
 }
 
 .club1 {
-  font-size: 32px; /* Larger font for title */
+  font-size: 38px; /* Larger font for title */
   color: #fdb813; /* Different shade for the title */
   margin-bottom: 10px;
   text-align: center;
 }
 
 .club2 {
-  font-size: 18px;
+  font-size: 22px;
   color: #ffffff; /* Different color for description */
   line-height: 1.5;
-  max-width: 80%;
-   /* Optional: limits text width for readability */
+  max-width: 80%; /* Optional: limits text width for readability */
   text-align: center;
+}
+
+.diwali_main {
+  display: flex;
+  flex-direction: column;  
+  text-align: center;  
+  justify-content: center;   
+  /* align-items: center;  */
+  padding: 20px;         
+  margin: 20px auto;      /* Center the main section horizontally */
+  max-width: 800px;       /* Reduced maximum width */
+  margin-top: -130px;       /* Add space above the diwali_main section */
+}
+
+
+.diwali {
+  font-size: 40px;         /* Smaller font size for the greeting */
+  color: #f4c631;          /* Festive color for the text */
+  margin-bottom: 10px;     /* Space below the greeting */
+  animation: fadeIn 1s, bounce 1s infinite; /* Fade-in and bounce effect */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;          /* Start transparent */
+      transform: translateY(-20px); /* Slide in from above */
   }
-  
+  to {
+      opacity: 1;          /* End fully visible */
+      transform: translateY(0); /* End in place */
+  }
+}
 
+/* Bounce animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); /* Original position */
+  }
+  40% {
+      transform: translateY(-10px); /* Move up */
+  }
+  60% {
+      transform: translateY(-5px);  /* Slightly move up */
+  }
+}
 
-  
+.quotes {
+  font-size: 20px;         /* Smaller font for the quote */
+  color: #ffffff;          /* White color for better readability */
+  max-width: 500px;          /* Limit width for readability */
+  line-height: 1.5;        /* Improve line spacing */
+  /* text-align:justify; */
+}
+
 .container {
-  height: 500px;
-  width: 500px;
+  height: 400px;           
+  width: 400px;            
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 570px;
+  top: 600px;  /* Increased to create more space */
   left: 50%;
 }
+
+
 .vivek {
-  height: 150px;
-  width: 300px;
+  height: 120px;           /* Reduced height */
+  width: 250px;            /* Reduced width */
   background-color: #fdcf0f;
   border-radius: 0 0 150px 150px;
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 50px;
+  bottom: 30px;            /* Adjusted position */
   overflow: hidden;
 }
+
 .inside {
-  width: 300px;
-  height: 60px;
+  width: 250px;            /* Reduced width */
+  height: 50px;            /* Reduced height */
   background-color: #fd500a;
   border-radius: 50%;
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 170px;
+  bottom: 120px;           /* Adjusted position */
 }
+
 .shadow {
-  height: 60px;
-  width: 320px;
+  height: 50px;            /* Reduced height */
+  width: 270px;            /* Reduced width */
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;            /* Adjusted position */
   border-radius: 50%;
   margin: auto;
   left: 0;
   right: 0;
 }
+
 .flame {
-  height: 170px;
-  width: 170px;
+  height: 150px;           /* Reduced height */
+  width: 150px;            /* Reduced width */
   background-color: #fdf1c2;
   border-radius: 160px 0;
   transform: rotate(-45deg);
@@ -130,76 +187,85 @@ body {
   bottom: 36px;
   animation: scale-up 2s infinite;
 }
+
 @keyframes scale-up {
   50% {
     transform: rotate(-45deg) scale(1.05);
     bottom: 42px;
   }
 }
+
 .flame:after {
   content: "";
   position: absolute;
-  height: 120px;
-  width: 120px;
+  height: 100px;           /* Reduced height */
+  width: 100px;            /* Reduced width */
   background-color: #f4c631;
   border-radius: 120px 0;
-  position: absolute;
   bottom: 0;
 }
+
 .light {
-  height: 330px;
-  width: 330px;
+  height: 280px;           /* Reduced height */
+  width: 280px;            /* Reduced width */
   background-color: rgba(253, 241, 194, 0.2);
   border-radius: 50%;
   position: absolute;
   left: -15px;
   bottom: 0;
 }
+
 .light:before,
 .light:after {
   content: "";
   position: absolute;
-  height: 120px;
-  width: 120px;
+  height: 100px;           /* Reduced height */
+  width: 100px;            /* Reduced width */
   background-color: rgba(253, 241, 194, 0.3);
   border-radius: 50%;
   animation: shine 5s linear infinite;
 }
+
 @keyframes shine {
   50% {
     transform: scale(0.7);
     opacity: 0.2;
   }
 }
+
 .light:before {
   bottom: 30px;
-  right: 60px;
+  right: 30px;             /* Adjusted position */
 }
+
 .light:after {
-  top: 50px;
-  left: 80px;
+  top: 30px;               /* Adjusted position */
+  left: 40px;              /* Adjusted position */
   animation-delay: 1s;
 }
+
 .line-1,
 .line-2 {
   position: absolute;
-  height: 60px;
-  width: 320px;
+  height: 40px;            /* Reduced height */
+  width: 250px;            /* Reduced width */
   border: none;
-  border-bottom: 8px solid #ffffff;
+  border-bottom: 6px solid #ffffff; /* Reduced thickness */
   border-radius: 50%;
   left: -10px;
 }
+
 .line-2 {
-  top: 60px;
+  top: 40px;               /* Adjusted position */
 }
+
 .dots {
-  height: 60px;
-  width: 320px;
+  height: 40px;            /* Reduced height */
+  width: 250px;            /* Reduced width */
   border: none;
-  border-bottom: 10px dotted #fd500a;
+  border-bottom: 8px dotted #fd500a; /* Reduced thickness */
   position: absolute;
   border-radius: 50%;
-  top: 30px;
+  top: 20px;               /* Adjusted position */
   left: -10px;
 }
