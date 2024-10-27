@@ -80,16 +80,25 @@ body {
   flex-direction: column;  
   text-align: center;  
   justify-content: center;   
-  /* align-items: center;  */
+  align-items: center; 
   padding: 20px;         
   margin: 20px auto;      /* Center the main section horizontally */
-  max-width: 800px;       /* Reduced maximum width */
+  /* max-width: 800px;       Reduced maximum width */
   margin-top: -130px;       /* Add space above the diwali_main section */
 }
 
+.created {
+  position: fixed;
+  bottom: 10px; /* Distance from the bottom */
+  left: 10px;   /* Distance from the left */
+  color: #ffffff;
+  font-size: 14px; /* Adjust as needed */
+  /* font-weight: bold; */
+  z-index: 1; /* Keeps it above other elements */
+}
 
 .diwali {
-  font-size: 40px;         /* Smaller font size for the greeting */
+  font-size: 65px;         /* Smaller font size for the greeting */
   color: #f4c631;          /* Festive color for the text */
   margin-bottom: 10px;     /* Space below the greeting */
   animation: fadeIn 1s, bounce 1s infinite; /* Fade-in and bounce effect */
@@ -123,9 +132,10 @@ body {
 .quotes {
   font-size: 20px;         /* Smaller font for the quote */
   color: #ffffff;          /* White color for better readability */
-  max-width: 500px;          /* Limit width for readability */
+  max-width: 10000px;          /* Limit width for readability */
   line-height: 1.5;        /* Improve line spacing */
   /* text-align:justify; */
+  font-style: italic;
 }
 
 .container {
@@ -268,4 +278,122 @@ body {
   border-radius: 50%;
   top: 20px;               /* Adjusted position */
   left: -10px;
+}
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Ensures the canvas is behind all other elements */
+}
+
+
+
+
+
+
+@media (max-width: 320px) {
+  body {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  #logo {
+    position: relative;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+  }
+
+  .logo1 img,
+  .logo2 img {
+    width: 60%; /* Smaller logo size */
+    max-height: 100px; /* Adjusted height */
+  }
+
+  .club {
+    top: 30px; /* Adjusted position */
+    font-size: 14px; /* Smaller font size for title */
+    text-align: center;
+  }
+
+  .club1 {
+    font-size: 18px; /* Smaller main title */
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .club2 {
+    font-size: 12px; /* Smaller description font */
+    text-align: center;
+    padding: 4px;
+  }
+
+  .diwali {
+    font-size: 24px; /* Smaller greeting font */
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .quotes {
+    font-size: 12px; /* Smaller font for quotes */
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  .container {
+    height: 200px; /* Smaller container height */
+    width: 200px; /* Smaller container width */
+    top: 300px; /* Adjusted position */
+    margin: 0 auto;
+  }
+
+  .vivek {
+    height: 60px; /* Smaller height */
+    width: 120px; /* Smaller width */
+    bottom: 8px; /* Adjusted position */
+  }
+
+  .inside {
+    width: 120px; /* Smaller width */
+    height: 25px; /* Smaller height */
+    bottom: 60px; /* Adjusted position */
+  }
+
+  .shadow {
+    height: 25px; /* Smaller height */
+    width: 140px; /* Smaller width */
+  }
+
+  .flame {
+    height: 70px; /* Smaller height */
+    width: 70px; /* Smaller width */
+  }
+
+  .light {
+    height: 120px; /* Smaller height */
+    width: 120px; /* Smaller width */
+  }
+
+  .line-1,
+  .line-2 {
+    height: 18px; /* Smaller height */
+    width: 130px; /* Smaller width */
+  }
+
+  .dots {
+    height: 18px; /* Smaller height */
+    width: 130px; /* Smaller width */
+  }
+
+  .created {
+    font-size: 9px; /* Smaller font size */
+    position: absolute;
+    bottom: 5px;
+    left: 8px; /* Adjusted distance from left */
+  }
 }
