@@ -17,12 +17,12 @@ body {
 
 #logo {
   position: absolute;
-  top: 20px;
+  top: -50px; /* Adjust closer to the top */
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space items across */
   align-items: center;
-  padding: 0 20px;
+  padding: 0 20px; /* Add padding for spacing from edges */
 }
 
 .logo1,
@@ -35,16 +35,16 @@ body {
 
 .paragraph {
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.5; /* Improved readability */
   flex-direction: column;
 }
 
 #logo .logo1 img,
 #logo img:last-of-type {
-  width: 150px;
-  max-height: 150px;
+  width: 230px; /* Adjust as needed */
+  max-height: 250px;
   object-fit: contain;
 }
 
@@ -54,281 +54,345 @@ body {
   align-items: center;
   color: #f4c631;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px; /* Adjust font size as desired */
   margin: 0 auto;
-  position: absolute;
-  top: 200px;
+  position: absolute; /* Positions element relative to page */
+  top: 120px; /* Adjust to move element closer to the top */
 }
 
 .club1 {
-  font-size: 24px;
-  color: #fdb813;
-  margin-bottom: 8px;
+  font-size: 38px; /* Larger font for title */
+  color: #fdb813; /* Different shade for the title */
+  margin-bottom: 10px;
   text-align: center;
 }
 
 .club2 {
-  font-size: 16px;
-  color: #ffffff;
+  font-size: 22px;
+  color: #ffffff; /* Different color for description */
   line-height: 1.5;
-  max-width: 80%;
+  max-width: 80%; /* Optional: limits text width for readability */
   text-align: center;
 }
 
 .diwali_main {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  margin: 15px auto;
-  margin-top: 100px;
+  flex-direction: column;  
+  text-align: center;  
+  justify-content: center;   
+  align-items: center; 
+  padding: 20px;         
+  margin: 20px auto;      /* Center the main section horizontally */
+  /* max-width: 800px;       Reduced maximum width */
+  margin-top: -130px;       /* Add space above the diwali_main section */
 }
 
 .created {
   position: fixed;
-  bottom: 5px;
-  left: 5px;
+  bottom: 10px; /* Distance from the bottom */
+  left: 10px;   /* Distance from the left */
   color: #ffffff;
-  font-size: 10px;
+  font-size: 14px; /* Adjust as needed */
+  /* font-weight: bold; */
+  z-index: 1; /* Keeps it above other elements */
 }
 
-/* Animation keyframes remain the same */
+.diwali {
+  font-size: 65px;         /* Smaller font size for the greeting */
+  color: #f4c631;          /* Festive color for the text */
+  margin-bottom: 10px;     /* Space below the greeting */
+  animation: fadeIn 1s, bounce 1s infinite; /* Fade-in and bounce effect */
+}
+
+/* Fade-in animation */
 @keyframes fadeIn {
   from {
-    opacity: 0;
-    transform: translateY(-20px);
+      opacity: 0;          /* Start transparent */
+      transform: translateY(-20px); /* Slide in from above */
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+      opacity: 1;          /* End fully visible */
+      transform: translateY(0); /* End in place */
   }
 }
 
+/* Bounce animation */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
+      transform: translateY(0); /* Original position */
   }
   40% {
-    transform: translateY(-10px);
+      transform: translateY(-10px); /* Move up */
   }
   60% {
-    transform: translateY(-5px);
+      transform: translateY(-5px);  /* Slightly move up */
   }
 }
 
-/* Diya styles remain the same */
+.quotes {
+  font-size: 20px;         /* Smaller font for the quote */
+  color: #ffffff;          /* White color for better readability */
+  max-width: 10000px;          /* Limit width for readability */
+  line-height: 1.5;        /* Improve line spacing */
+  /* text-align:justify; */
+  font-style: italic;
+}
+
 .container {
-  height: 120px;
-  width: 120px;
+  height: 400px;           
+  width: 400px;            
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 500px;
+  top: 600px;  /* Increased to create more space */
   left: 50%;
 }
 
-/* Rest of the original styles for diya components */
-/* ... */
 
-/* Media Queries */
+.vivek {
+  height: 120px;           /* Reduced height */
+  width: 250px;            /* Reduced width */
+  background-color: #fdcf0f;
+  border-radius: 0 0 150px 150px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 30px;            /* Adjusted position */
+  overflow: hidden;
+}
 
-/* Large Screens (Laptops & Desktops) */
-@media screen and (min-width: 1024px) {
-  #logo {
-    top: 20px;
-  }
-  
-  #logo .logo1 img,
-  #logo img:last-of-type {
-    width: 150px;
-    max-height: 150px;
-  }
-  
-  .club {
-    top: 200px;
-  }
-  
-  .club1 {
-    font-size: 24px;
-  }
-  
-  .club2 {
-    font-size: 16px;
-    max-width: 60%;
-  }
-  
-  .diwali_main {
-    margin-top: 100px;
-  }
-  
-  .container {
-    height: 120px;
-    width: 120px;
-    top: 500px;
+.inside {
+  width: 250px;            /* Reduced width */
+  height: 50px;            /* Reduced height */
+  background-color: #fd500a;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 120px;           /* Adjusted position */
+}
+
+.shadow {
+  height: 50px;            /* Reduced height */
+  width: 270px;            /* Reduced width */
+  position: absolute;
+  bottom: 20px;            /* Adjusted position */
+  border-radius: 50%;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.flame {
+  height: 150px;           /* Reduced height */
+  width: 150px;            /* Reduced width */
+  background-color: #fdf1c2;
+  border-radius: 160px 0;
+  transform: rotate(-45deg);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 36px;
+  animation: scale-up 2s infinite;
+}
+
+@keyframes scale-up {
+  50% {
+    transform: rotate(-45deg) scale(1.05);
+    bottom: 42px;
   }
 }
 
-/* Tablets */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  #logo {
-    top: 15px;
-  }
-  
-  #logo .logo1 img,
-  #logo img:last-of-type {
-    width: 120px;
-    max-height: 120px;
-  }
-  
-  .club {
-    top: 180px;
-  }
-  
-  .club1 {
-    font-size: 22px;
-  }
-  
-  .club2 {
-    font-size: 14px;
-    max-width: 70%;
-  }
-  
-  .diwali_main {
-    margin-top: 80px;
-  }
-  
-  .container {
-    height: 100px;
-    width: 100px;
-    top: 450px;
+.flame:after {
+  content: "";
+  position: absolute;
+  height: 100px;           /* Reduced height */
+  width: 100px;            /* Reduced width */
+  background-color: #f4c631;
+  border-radius: 120px 0;
+  bottom: 0;
+}
+
+.light {
+  height: 280px;           /* Reduced height */
+  width: 280px;            /* Reduced width */
+  background-color: rgba(253, 241, 194, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+}
+
+.light:before,
+.light:after {
+  content: "";
+  position: absolute;
+  height: 100px;           /* Reduced height */
+  width: 100px;            /* Reduced width */
+  background-color: rgba(253, 241, 194, 0.3);
+  border-radius: 50%;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  50% {
+    transform: scale(0.7);
+    opacity: 0.2;
   }
 }
 
-/* Mobile Landscape */
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  #logo {
-    top: 10px;
-  }
-  
-  #logo .logo1 img,
-  #logo img:last-of-type {
-    width: 100px;
-    max-height: 100px;
-  }
-  
-  .club {
-    top: 150px;
-  }
-  
-  .club1 {
-    font-size: 20px;
-  }
-  
-  .club2 {
-    font-size: 13px;
-    max-width: 80%;
-  }
-  
-  .diwali_main {
-    margin-top: 60px;
-  }
-  
-  .container {
-    height: 90px;
-    width: 90px;
-    top: 400px;
-  }
+.light:before {
+  bottom: 30px;
+  right: 30px;             /* Adjusted position */
 }
 
-/* Mobile Portrait */
-@media screen and (max-width: 480px) {
+.light:after {
+  top: 30px;               /* Adjusted position */
+  left: 40px;              /* Adjusted position */
+  animation-delay: 1s;
+}
+
+.line-1,
+.line-2 {
+  position: absolute;
+  height: 40px;            /* Reduced height */
+  width: 250px;            /* Reduced width */
+  border: none;
+  border-bottom: 6px solid #ffffff; /* Reduced thickness */
+  border-radius: 50%;
+  left: -10px;
+}
+
+.line-2 {
+  top: 40px;               /* Adjusted position */
+}
+
+.dots {
+  height: 40px;            /* Reduced height */
+  width: 250px;            /* Reduced width */
+  border: none;
+  border-bottom: 8px dotted #fd500a; /* Reduced thickness */
+  position: absolute;
+  border-radius: 50%;
+  top: 20px;               /* Adjusted position */
+  left: -10px;
+}
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Ensures the canvas is behind all other elements */
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  body {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
   #logo {
-    top: 5px;
+    position: relative;
+    top: 0;
     flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
   }
-  
-  #logo .logo1 img,
-  #logo img:last-of-type {
-    width: 80px;
-    max-height: 80px;
-  }
-  
-  .club {
-    top: 120px;
-  }
-  
-  .club1 {
-    font-size: 18px;
-  }
-  
-  .club2 {
-    font-size: 12px;
-    max-width: 90%;
-  }
-  
-  .diwali_main {
-    margin-top: 40px;
-  }
-  
-  .container {
-    height: 80px;
-    width: 80px;
-    top: 350px;
-  }
-  
-  .diwali {
-    font-size: 20px;
-  }
-  
-  .quotes {
-    font-size: 12px;
-  }
-  
-  .created {
-    font-size: 8px;
-  }
-}
 
-/* Small Mobile Devices */
-@media screen and (max-width: 320px) {
-  #logo {
-    top: 5px;
+  .logo1 img,
+  .logo2 img {
+    width: 50%; /* Smaller logo size */
+    max-height: 120px; /* Adjusted height */
   }
-  
-  #logo .logo1 img,
-  #logo img:last-of-type {
-    width: 60px;
-    max-height: 60px;
-  }
-  
+
   .club {
-    top: 100px;
+    top: 50px; /* Adjust position */
+    font-size: 16px; /* Smaller font size for title */
   }
-  
+
   .club1 {
-    font-size: 16px;
+    font-size: 22px; /* Smaller main title */
+    text-align: center;
   }
-  
+
   .club2 {
-    font-size: 10px;
+    font-size: 14px; /* Smaller description font */
+    text-align: center;
+    padding: 5px;
   }
-  
-  .diwali_main {
-    margin-top: 30px;
-  }
-  
-  .container {
-    height: 70px;
-    width: 70px;
-    top: 300px;
-  }
-  
+
   .diwali {
-    font-size: 18px;
+    font-size: 28px; /* Smaller greeting font */
+    text-align: center;
+    margin-top: 10px;
   }
-  
+
   .quotes {
-    font-size: 10px;
+    font-size: 14px; /* Smaller font for quotes */
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .container {
+    height: 250px; /* Smaller container height */
+    width: 250px; /* Smaller container width */
+    top: 350px; /* Adjusted position */
+    margin: 0 auto;
+  }
+
+  .vivek {
+    height: 80px; /* Smaller height */
+    width: 150px; /* Smaller width */
+    bottom: 10px; /* Adjusted position */
+  }
+
+  .inside {
+    width: 150px; /* Smaller width */
+    height: 30px; /* Smaller height */
+    bottom: 80px; /* Adjusted position */
+  }
+
+  .shadow {
+    height: 30px; /* Smaller height */
+    width: 160px; /* Smaller width */
+  }
+
+  .flame {
+    height: 80px; /* Smaller height */
+    width: 80px; /* Smaller width */
+  }
+
+  .light {
+    height: 140px; /* Smaller height */
+    width: 140px; /* Smaller width */
+  }
+
+  .line-1,
+  .line-2 {
+    height: 20px; /* Smaller height */
+    width: 150px; /* Smaller width */
+  }
+
+  .dots {
+    height: 20px; /* Smaller height */
+    width: 150px; /* Smaller width */
+  }
+
+  .created {
+    font-size: 10px; /* Smaller font size */
+    position: absolute;
+    bottom: 5px;
+    left: 10px; /* Adjusted distance from left */
   }
 }
