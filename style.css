@@ -285,6 +285,101 @@ body {
 
 
 
+@media screen and (max-width: 600px) {
 
+  /* Logo Section */
+  #logo {
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
 
+  .logo1,
+  .paragraph,
+  .logo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  /* Text Styling */
+  .paragraph {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    line-height: 0.8;
+  }
+
+  /* Logo Images */
+  #logo .logo1 img,
+  #logo img:last-of-type {
+    width: 80px;
+    max-height: 80px;
+    object-fit: contain;
+  }
+
+  /* Font Sizing for Various Classes */
+  .club1 {
+    font-size: 12px;
+  }
+
+  .club2 {
+    font-size: 8px;
+  }
+
+  .diwali {
+    font-size: 12px;
+  }
+
+  .quotes {
+    font-size: 7px;
+  }
+
+  /* Container & Element Sizing */
+  .container {
+    width: 50px;
+    height: 50px;
+  }
+
+  .vivek {
+    height: 18px;
+    width: 35px;
+  }
+
+  .inside {
+    width: 35px;
+    height: 12px;
+  }
+
+  .shadow {
+    height: 5px;
+    width: 35px;
+  }
+
+  .flame {
+    height: 20px;
+    width: 20px;
+    margin-left: -15px;
+  }
+
+  .light {
+    height: 35px;
+    width: 35px;
+  }
+
+  /* Line and Dot Elements */
+  .line-1,
+  .line-2 {
+    height: 6px;
+    width: 40px;
+  }
+
+  .dots {
+    height: 8px;
+    width: 40px;
+  }
+}
