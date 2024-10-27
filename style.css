@@ -291,109 +291,109 @@ body {
 
 
 
-
-
 @media (max-width: 320px) {
   body {
     height: auto;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    background-color: #000; /* Dark background for contrast */
   }
 
   #logo {
-    position: relative;
-    top: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8px 0;
+    position: relative;
+    top: 5px;
+    margin-bottom: 10px;
   }
 
   .logo1 img,
   .logo2 img {
-    width: 60%; /* Smaller logo size */
-    max-height: 100px; /* Adjusted height */
+    width: 50%; /* Smaller logo size */
+    max-height: 80px; /* Adjusted height */
   }
 
   .club {
-    top: 30px; /* Adjusted position */
-    font-size: 14px; /* Smaller font size for title */
+    font-size: 16px; /* Reduced font size for subtitle */
     text-align: center;
+    margin-top: 5px;
   }
 
   .club1 {
-    font-size: 18px; /* Smaller main title */
+    font-size: 20px; /* Smaller main title */
     text-align: center;
     margin: 5px 0;
   }
 
   .club2 {
-    font-size: 12px; /* Smaller description font */
+    font-size: 12px; /* Smaller subtitle font */
     text-align: center;
-    padding: 4px;
+    padding: 2px;
   }
 
   .diwali {
-    font-size: 24px; /* Smaller greeting font */
+    font-size: 24px; /* Smaller greeting */
     text-align: center;
-    margin-top: 8px;
+    margin-top: 10px;
   }
 
   .quotes {
-    font-size: 12px; /* Smaller font for quotes */
-    margin: 8px 0;
+    font-size: 12px; /* Reduced font for quotes */
+    margin: 5px 0;
     text-align: center;
+    padding: 0 10px;
   }
 
   .container {
-    height: 200px; /* Smaller container height */
-    width: 200px; /* Smaller container width */
-    top: 300px; /* Adjusted position */
+    height: 160px; /* Smaller diya container height */
+    width: 160px; /* Smaller diya container width */
     margin: 0 auto;
+    margin-top: 10px;
   }
 
   .vivek {
-    height: 60px; /* Smaller height */
-    width: 120px; /* Smaller width */
-    bottom: 8px; /* Adjusted position */
+    height: 50px; /* Smaller diya height */
+    width: 100px; /* Smaller diya width */
+    bottom: 5px;
   }
 
   .inside {
-    width: 120px; /* Smaller width */
-    height: 25px; /* Smaller height */
-    bottom: 60px; /* Adjusted position */
+    width: 100px; /* Reduced width */
+    height: 25px; /* Reduced height */
+    bottom: 40px;
   }
 
   .shadow {
-    height: 25px; /* Smaller height */
-    width: 140px; /* Smaller width */
+    height: 20px;
+    width: 120px;
   }
 
   .flame {
-    height: 70px; /* Smaller height */
-    width: 70px; /* Smaller width */
+    height: 60px;
+    width: 60px;
   }
 
   .light {
-    height: 120px; /* Smaller height */
-    width: 120px; /* Smaller width */
+    height: 100px;
+    width: 100px;
   }
 
   .line-1,
   .line-2 {
-    height: 18px; /* Smaller height */
-    width: 130px; /* Smaller width */
+    height: 15px;
+    width: 110px;
   }
 
   .dots {
-    height: 18px; /* Smaller height */
-    width: 130px; /* Smaller width */
+    height: 15px;
+    width: 110px;
   }
 
   .created {
-    font-size: 9px; /* Smaller font size */
-    position: absolute;
-    bottom: 5px;
-    left: 8px; /* Adjusted distance from left */
+    font-size: 9px; /* Reduced font size */
+    text-align: center;
+    margin-top: 10px;
   }
 }
