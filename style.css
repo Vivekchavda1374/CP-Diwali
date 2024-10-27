@@ -281,58 +281,70 @@ body {
   height: 100vh;
   z-index: -1;
 }
-@media only screen and (max-width: 375px) {
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 390px) {
   .club1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .club2 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .diwali {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .quotes {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .container {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
   .vivek {
-    height: 30px;
-    width: 70px;
+    height: 35px;
+    width: 80px;
   }
 
   .inside {
-    width: 70px;
-    height: 20px;
+    width: 80px;
+    height: 25px;
   }
 
   .shadow {
-    height: 10px;
-    width: 70px;
+    height: 12px;
+    width: 80px;
   }
 
   .flame {
-    height: 40px;
-    width: 40px;
-    margin-left: -20px;
+    height: 50px;
+    width: 50px;
+    margin-left: -25px;
   }
 
   .light {
-    height: 70px;
-    width: 70px;
+    height: 85px;
+    width: 85px;
   }
 
   .line-1,
-  .line-2,
+  .line-2 {
+    height: 8px;
+    width: 80px;
+  }
+
   .dots {
-    height: 6px;
-    width: 70px;
+    height: 10px;
+    width: 80px;
   }
 }
