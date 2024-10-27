@@ -285,101 +285,319 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px) {
 
-  /* Logo Section */
-  #logo {
-    position: absolute;
-    top: -30px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-  }
+  
+#logo {
+  position: absolute;
+  top: -30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
 
-  .logo1,
-  .paragraph,
-  .logo2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.logo1,
+.paragraph,
+.logo2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* top: -40px; */
+}
 
-  /* Text Styling */
-  .paragraph {
-    color: white;
-    font-size: 10px;
-    text-align: center;
-    line-height: 0.8;
-  }
+.paragraph {
+  color: white;
+  display: flex;
+  
+  justify-content: center;
+  flex-direction: column;
+  font-size: 8px;
+  text-align: center;
+  line-height: 1.5;
+  
+}
+.logo1{
+  top: -30px;
+}
+.logo2{
+  top: -30px;
+}
 
-  /* Logo Images */
-  #logo .logo1 img,
-  #logo img:last-of-type {
-    width: 80px;
-    max-height: 80px;
-    object-fit: contain;
-  }
+#logo .logo1 img,
+#logo img:last-of-type {
+  width: 115px;
+  max-height: 150px;
+  object-fit: contain;
+}
 
-  /* Font Sizing for Various Classes */
-  .club1 {
-    font-size: 12px;
-  }
+.club {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4c631;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 auto;
+  position: absolute;
+  top: 120px;
+}
 
-  .club2 {
-    font-size: 8px;
-  }
+.club1 {
+  font-size: 28px;
+  color: #fdb813;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
-  .diwali {
-    font-size: 12px;
-  }
+.club2 {
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 1.5;
+  max-width: 80%;
+  text-align: center;
+}
 
-  .quotes {
-    font-size: 7px;
-  }
+.diwali_main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+  margin-top: -290px;
+}
 
-  /* Container & Element Sizing */
-  .container {
-    width: 50px;
-    height: 50px;
-  }
+.created {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color: #ffffff;
+  font-size: 14px;
+}
 
-  .vivek {
-    height: 18px;
-    width: 35px;
-  }
+.diwali {
+  font-size: 65px;
+  color: #f4c631;
+  margin-bottom: 10px;
+  animation: fadeIn 1s, bounce 1s infinite;
+}
 
-  .inside {
-    width: 35px;
-    height: 12px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  .shadow {
-    height: 5px;
-    width: 35px;
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
 
-  .flame {
-    height: 20px;
-    width: 20px;
-    margin-left: -15px;
-  }
+.quotes {
+  font-size: 14px;
+  color: #ffffff;
+  max-width: 10000px;
+  line-height: 1.5;
+  font-style: italic;
+}
 
-  .light {
-    height: 35px;
-    width: 35px;
-  }
+.container {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 700px;
+  left: 50%;
+}
 
-  /* Line and Dot Elements */
-  .line-1,
-  .line-2 {
-    height: 6px;
-    width: 40px;
-  }
+.vivek {
+  height: 120px;
+  width: 250px;
+  background-color: #fdcf0f;
+  border-radius: 0 0 150px 150px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  overflow: hidden;
+}
 
-  .dots {
-    height: 8px;
-    width: 40px;
+.inside {
+  width: 250px;
+  height: 50px;
+  background-color: #fd500a;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 120px;
+}
+
+.shadow {
+  height: 50px;
+  width: 270px;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 50%;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.flame {
+  height: 150px;
+  width: 150px;
+  background-color: #fdf1c2;
+  border-radius: 160px 0;
+  transform: rotate(-45deg);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 36px;
+  animation: scale-up 2s infinite;
+}
+
+@keyframes scale-up {
+  50% {
+    transform: rotate(-45deg) scale(1.05);
+    bottom: 42px;
   }
+}
+
+.flame:after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #f4c631;
+  border-radius: 120px 0;
+  bottom: 0;
+}
+
+.light {
+  height: 280px;
+  width: 280px;
+  background-color: rgba(253, 241, 194, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+}
+
+.light:before,
+.light:after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(253, 241, 194, 0.3);
+  border-radius: 50%;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  50% {
+    transform: scale(0.7);
+    opacity: 0.2;
+  }
+}
+
+.light:before {
+  bottom: 30px;
+  right: 30px;
+}
+
+.light:after {
+  top: 30px;
+  left: 40px;
+  animation-delay: 1s;
+}
+
+.line-1,
+.line-2 {
+  position: absolute;
+  height: 40px;
+  width: 250px;
+  border: none;
+  border-bottom: 6px solid #ffffff;
+  border-radius: 50%;
+  left: -10px;
+}
+
+.line-2 {
+  top: 40px;
+}
+
+.dots {
+  height: 40px;
+  width: 250px;
+  border: none;
+  border-bottom: 8px dotted #fd500a;
+  position: absolute;
+  border-radius: 50%;
+  top: 20px;
+  left: -10px;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+
 }
