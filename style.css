@@ -290,11 +290,7 @@ body {
 
 
 
-
-
-
-
-@media (max-width: 480px) {
+@media (max-width: 575.98px) {
   body {
     height: auto;
     padding: 0;
@@ -305,94 +301,106 @@ body {
   #logo {
     position: relative;
     top: 0;
+    display: flex; /* Ensure flex layout is active */
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
+    padding: 0.5rem 0; /* Compact padding for spacing */
   }
 
   .logo1 img,
   .logo2 img {
-    width: 50%; /* Smaller logo size */
-    max-height: 120px; /* Adjusted height */
+    width: 30%; /* Smaller logo width for compact view */
+    max-height: 5rem; /* Reduced height for better scaling */
+    margin-bottom: 0.5rem; /* Add space below logos */
   }
 
   .club {
-    top: 50px; /* Adjust position */
-    font-size: 16px; /* Smaller font size for title */
+    top: 2rem; /* Adjusted top position */
+    font-size: 0.875rem; /* 14px - slightly smaller font */
+    text-align: center; /* Centered text */
+    margin-bottom: 0.5rem; /* Space below club title */
   }
 
   .club1 {
-    font-size: 22px; /* Smaller main title */
+    font-size: 1.25rem; /* 20px */
     text-align: center;
+    margin-bottom: 0.25rem; /* Space below main title */
   }
 
   .club2 {
-    font-size: 14px; /* Smaller description font */
+    font-size: 0.75rem; /* 12px - smaller description font */
     text-align: center;
-    padding: 5px;
+    padding: 0.25rem; /* Compact padding */
+    margin-bottom: 0.5rem; /* Space below description */
   }
 
   .diwali {
-    font-size: 28px; /* Smaller greeting font */
+    font-size: 1.5rem; /* 24px - smaller greeting font */
     text-align: center;
-    margin-top: 10px;
+    margin: 0.5rem 0; /* Margins above and below */
   }
 
   .quotes {
-    font-size: 14px; /* Smaller font for quotes */
-    margin: 10px 0;
+    font-size: 0.75rem; /* 12px - smaller quote font */
+    margin: 0.5rem 0; /* Margins above and below */
     text-align: center;
   }
 
   .container {
-    height: 250px; /* Smaller container height */
-    width: 250px; /* Smaller container width */
-    top: 350px; /* Adjusted position */
+    height: 13rem; /* Reduced container size */
+    width: 13rem;
+    top: 18rem; /* Adjusted top position */
     margin: 0 auto;
+    display: flex; /* Ensure flex layout for inner items */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Centered alignment */
+    justify-content: center; /* Center vertically */
+    padding: 1rem; /* Padding around container */
   }
 
   .vivek {
-    height: 80px; /* Smaller height */
-    width: 150px; /* Smaller width */
-    bottom: 10px; /* Adjusted position */
+    height: 4rem; /* Reduced height */
+    width: 8rem;
+    margin-bottom: 0.5rem; /* Space below vivek image */
   }
 
   .inside {
-    width: 150px; /* Smaller width */
-    height: 30px; /* Smaller height */
-    bottom: 80px; /* Adjusted position */
+    width: 8rem;
+    height: 1.5rem; /* Smaller height */
+    margin-bottom: 0.5rem; /* Space below inside element */
   }
 
   .shadow {
-    height: 30px; /* Smaller height */
-    width: 160px; /* Smaller width */
+    height: 1.5rem;
+    width: 8rem; /* Reduced width */
+    margin-bottom: 0.5rem; /* Space below shadow */
   }
 
   .flame {
-    height: 80px; /* Smaller height */
-    width: 80px; /* Smaller width */
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 0.5rem; /* Space below flame */
   }
 
   .light {
-    height: 140px; /* Smaller height */
-    width: 140px; /* Smaller width */
+    height: 7rem;
+    width: 7rem;
+    margin-bottom: 0.5rem; /* Space below light */
   }
 
   .line-1,
-  .line-2 {
-    height: 20px; /* Smaller height */
-    width: 150px; /* Smaller width */
-  }
-
+  .line-2,
   .dots {
-    height: 20px; /* Smaller height */
-    width: 150px; /* Smaller width */
+    height: 1rem; /* Reduced height */
+    width: 8rem; /* Reduced width */
+    margin-bottom: 0.5rem; /* Space below each line */
   }
 
   .created {
-    font-size: 10px; /* Smaller font size */
+    font-size: 0.5rem; /* 8px - smaller footer font */
     position: absolute;
-    bottom: 5px;
-    left: 10px; /* Adjusted distance from left */
+    bottom: 0.25rem;
+    left: 0.5rem;
+    text-align: left; /* Align to the left */
   }
 }
