@@ -13,16 +13,17 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 #logo {
   position: absolute;
-  top: -50px; /* Adjust closer to the top */
+  top: -50px;
   width: 100%;
   display: flex;
-  justify-content: space-between; /* Space items across */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 20px; /* Add padding for spacing from edges */
+  padding: 0 20px;
 }
 
 .logo1,
@@ -37,13 +38,12 @@ body {
   color: white;
   font-size: 20px;
   text-align: center;
-  line-height: 1.5; /* Improved readability */
-  flex-direction: column;
+  line-height: 1.5;
 }
 
 #logo .logo1 img,
 #logo img:last-of-type {
-  width: 230px; /* Adjust as needed */
+  width: 230px;
   max-height: 250px;
   object-fit: contain;
 }
@@ -54,130 +54,123 @@ body {
   align-items: center;
   color: #f4c631;
   font-weight: bold;
-  font-size: 24px; /* Adjust font size as desired */
+  font-size: 24px;
   margin: 0 auto;
-  position: absolute; /* Positions element relative to page */
-  top: 120px; /* Adjust to move element closer to the top */
+  position: absolute;
+  top: 120px;
 }
 
 .club1 {
-  font-size: 38px; /* Larger font for title */
-  color: #fdb813; /* Different shade for the title */
+  font-size: 38px;
+  color: #fdb813;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .club2 {
   font-size: 22px;
-  color: #ffffff; /* Different color for description */
+  color: #ffffff;
   line-height: 1.5;
-  max-width: 80%; /* Optional: limits text width for readability */
+  max-width: 80%;
   text-align: center;
 }
 
 .diwali_main {
   display: flex;
-  flex-direction: column;  
-  text-align: center;  
-  justify-content: center;   
-  align-items: center; 
-  padding: 20px;         
-  margin: 20px auto;      /* Center the main section horizontally */
-  /* max-width: 800px;       Reduced maximum width */
-  margin-top: -130px;       /* Add space above the diwali_main section */
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+  margin-top: -170px;
 }
 
 .created {
   position: fixed;
-  bottom: 10px; /* Distance from the bottom */
-  left: 10px;   /* Distance from the left */
+  bottom: 10px;
+  left: 10px;
   color: #ffffff;
-  font-size: 14px; /* Adjust as needed */
-  /* font-weight: bold; */
-  z-index: 1; /* Keeps it above other elements */
+  font-size: 14px;
 }
 
 .diwali {
-  font-size: 65px;         /* Smaller font size for the greeting */
-  color: #f4c631;          /* Festive color for the text */
-  margin-bottom: 10px;     /* Space below the greeting */
-  animation: fadeIn 1s, bounce 1s infinite; /* Fade-in and bounce effect */
+  font-size: 65px;
+  color: #f4c631;
+  margin-bottom: 10px;
+  animation: fadeIn 1s, bounce 1s infinite;
 }
 
-/* Fade-in animation */
 @keyframes fadeIn {
   from {
-      opacity: 0;          /* Start transparent */
-      transform: translateY(-20px); /* Slide in from above */
+    opacity: 0;
+    transform: translateY(-20px);
   }
   to {
-      opacity: 1;          /* End fully visible */
-      transform: translateY(0); /* End in place */
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Bounce animation */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0); /* Original position */
+    transform: translateY(0);
   }
   40% {
-      transform: translateY(-10px); /* Move up */
+    transform: translateY(-10px);
   }
   60% {
-      transform: translateY(-5px);  /* Slightly move up */
+    transform: translateY(-5px);
   }
 }
 
 .quotes {
-  font-size: 20px;         /* Smaller font for the quote */
-  color: #ffffff;          /* White color for better readability */
-  max-width: 10000px;          /* Limit width for readability */
-  line-height: 1.5;        /* Improve line spacing */
-  /* text-align:justify; */
+  font-size: 20px;
+  color: #ffffff;
+  max-width: 10000px;
+  line-height: 1.5;
   font-style: italic;
 }
 
 .container {
-  height: 400px;           
-  width: 400px;            
+  height: 400px;
+  width: 400px;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 600px;  /* Increased to create more space */
+  top: 600px;
   left: 50%;
 }
 
-
 .vivek {
-  height: 120px;           /* Reduced height */
-  width: 250px;            /* Reduced width */
+  height: 120px;
+  width: 250px;
   background-color: #fdcf0f;
   border-radius: 0 0 150px 150px;
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 30px;            /* Adjusted position */
+  bottom: 30px;
   overflow: hidden;
 }
 
 .inside {
-  width: 250px;            /* Reduced width */
-  height: 50px;            /* Reduced height */
+  width: 250px;
+  height: 50px;
   background-color: #fd500a;
   border-radius: 50%;
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 120px;           /* Adjusted position */
+  bottom: 120px;
 }
 
 .shadow {
-  height: 50px;            /* Reduced height */
-  width: 270px;            /* Reduced width */
+  height: 50px;
+  width: 270px;
   position: absolute;
-  bottom: 20px;            /* Adjusted position */
+  bottom: 20px;
   border-radius: 50%;
   margin: auto;
   left: 0;
@@ -185,8 +178,8 @@ body {
 }
 
 .flame {
-  height: 150px;           /* Reduced height */
-  width: 150px;            /* Reduced width */
+  height: 150px;
+  width: 150px;
   background-color: #fdf1c2;
   border-radius: 160px 0;
   transform: rotate(-45deg);
@@ -208,16 +201,16 @@ body {
 .flame:after {
   content: "";
   position: absolute;
-  height: 100px;           /* Reduced height */
-  width: 100px;            /* Reduced width */
+  height: 100px;
+  width: 100px;
   background-color: #f4c631;
   border-radius: 120px 0;
   bottom: 0;
 }
 
 .light {
-  height: 280px;           /* Reduced height */
-  width: 280px;            /* Reduced width */
+  height: 280px;
+  width: 280px;
   background-color: rgba(253, 241, 194, 0.2);
   border-radius: 50%;
   position: absolute;
@@ -229,8 +222,8 @@ body {
 .light:after {
   content: "";
   position: absolute;
-  height: 100px;           /* Reduced height */
-  width: 100px;            /* Reduced width */
+  height: 100px;
+  width: 100px;
   background-color: rgba(253, 241, 194, 0.3);
   border-radius: 50%;
   animation: shine 5s linear infinite;
@@ -245,161 +238,101 @@ body {
 
 .light:before {
   bottom: 30px;
-  right: 30px;             /* Adjusted position */
+  right: 30px;
 }
 
 .light:after {
-  top: 30px;               /* Adjusted position */
-  left: 40px;              /* Adjusted position */
+  top: 30px;
+  left: 40px;
   animation-delay: 1s;
 }
 
 .line-1,
 .line-2 {
   position: absolute;
-  height: 40px;            /* Reduced height */
-  width: 250px;            /* Reduced width */
+  height: 40px;
+  width: 250px;
   border: none;
-  border-bottom: 6px solid #ffffff; /* Reduced thickness */
+  border-bottom: 6px solid #ffffff;
   border-radius: 50%;
   left: -10px;
 }
 
 .line-2 {
-  top: 40px;               /* Adjusted position */
+  top: 40px;
 }
 
 .dots {
-  height: 40px;            /* Reduced height */
-  width: 250px;            /* Reduced width */
+  height: 40px;
+  width: 250px;
   border: none;
-  border-bottom: 8px dotted #fd500a; /* Reduced thickness */
+  border-bottom: 8px dotted #fd500a;
   position: absolute;
   border-radius: 50%;
-  top: 20px;               /* Adjusted position */
+  top: 20px;
   left: -10px;
 }
+
 #canvas {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1; /* Ensures the canvas is behind all other elements */
+  z-index: -1;
 }
 
-
-@media (max-width: 575.98px) {
-  body {
-    height: auto;
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
-  }
-
-  #logo {
-    position: relative;
-    top: 0;
-    display: flex; /* Ensure flex layout is active */
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem 0; /* Compact padding for spacing */
-  }
-
-  .logo1 img,
-  .logo2 img {
-    width: 30%; /* Smaller logo width for compact view */
-    max-height: 5rem; /* Reduced height for better scaling */
-    margin-bottom: 0.5rem; /* Add space below logos */
-  }
-
-  .club {
-    top: 2rem; /* Adjusted top position */
-    font-size: 0.875rem; /* 14px - slightly smaller font */
-    text-align: center; /* Centered text */
-    margin-bottom: 0.5rem; /* Space below club title */
-  }
-
+@media only screen and (max-width: 375px) {
   .club1 {
-    font-size: 1.25rem; /* 20px */
-    text-align: center;
-    margin-bottom: 0.25rem; /* Space below main title */
+    font-size: 14px;
   }
 
   .club2 {
-    font-size: 0.75rem; /* 12px - smaller description font */
-    text-align: center;
-    padding: 0.25rem; /* Compact padding */
-    margin-bottom: 0.5rem; /* Space below description */
+    font-size: 7px;
   }
 
   .diwali {
-    font-size: 1.5rem; /* 24px - smaller greeting font */
-    text-align: center;
-    margin: 0.5rem 0; /* Margins above and below */
+    font-size: 14px;
   }
 
   .quotes {
-    font-size: 0.75rem; /* 12px - smaller quote font */
-    margin: 0.5rem 0; /* Margins above and below */
-    text-align: center;
+    font-size: 7px;
   }
 
   .container {
-    height: 13rem; /* Reduced container size */
-    width: 13rem;
-    top: 18rem; /* Adjusted top position */
-    margin: 0 auto;
-    display: flex; /* Ensure flex layout for inner items */
-    flex-direction: column; /* Column layout */
-    align-items: center; /* Centered alignment */
-    justify-content: center; /* Center vertically */
-    padding: 1rem; /* Padding around container */
+    width: 60%;
+    padding: 8px;
   }
 
   .vivek {
-    height: 4rem; /* Reduced height */
-    width: 8rem;
-    margin-bottom: 0.5rem; /* Space below vivek image */
+    height: 15px;
+    width: 40px;
   }
 
   .inside {
-    width: 8rem;
-    height: 1.5rem; /* Smaller height */
-    margin-bottom: 0.5rem; /* Space below inside element */
+    width: 56px;
+    height: 22px;
   }
 
   .shadow {
-    height: 1.5rem;
-    width: 8rem; /* Reduced width */
-    margin-bottom: 0.5rem; /* Space below shadow */
+    height: 10px;
+    width: 56px;
   }
 
   .flame {
-    height: 4rem;
-    width: 4rem;
-    margin-bottom: 0.5rem; /* Space below flame */
+    height: 30px;
+    width: 30px;
   }
 
   .light {
-    height: 7rem;
-    width: 7rem;
-    margin-bottom: 0.5rem; /* Space below light */
+    height: 50px;
+    width: 50px;
   }
 
   .line-1,
   .line-2,
   .dots {
-    height: 1rem; /* Reduced height */
-    width: 8rem; /* Reduced width */
-    margin-bottom: 0.5rem; /* Space below each line */
-  }
-
-  .created {
-    font-size: 0.5rem; /* 8px - smaller footer font */
-    position: absolute;
-    bottom: 0.25rem;
-    left: 0.5rem;
-    text-align: left; /* Align to the left */
+    height: 6px;
+    width: 56px;
   }
 }
