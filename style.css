@@ -319,12 +319,15 @@ body {
 
 
 @media screen and (max-width: 600px) {
+*{
+  box-sizing: border-box;
 
+}
   
 #logo {
   position: absolute;
   top: -30px;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -343,12 +346,13 @@ body {
 .paragraph {
   color: white;
   display: flex;
-  
+  margin-top:60px;
   justify-content: center;
   flex-direction: column;
-  font-size: 8px;
+  font-size: 10px;
   text-align: center;
   line-height: 1.5;
+  width: 500px;
   
 }
 .logo1{
@@ -400,7 +404,7 @@ body {
   align-items: center;
   padding: 20px;
   margin: 20px auto;
-  margin-top: -290px;
+  margin-top: -170px;
 }
 
 .created {
