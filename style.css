@@ -364,8 +364,8 @@ body {
 
 #logo .logo1 img,
 #logo img:last-of-type {
-  width: 150px;
-  max-height: 200px;
+  width: 100px;
+  max-height: 150px;
   object-fit: contain;
 }
 
@@ -378,7 +378,7 @@ body {
   font-size: 24px;
   margin: 0 auto;
   position: absolute;
-  top: 150px;
+  top: 130px;
 }
 
 .club1 {
