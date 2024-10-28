@@ -11,14 +11,9 @@ window.addEventListener("resize", resizeCanvas, false);
                 window.setTimeout(callback, 1000/60);
             };
         
-        var canvas, ctx, w, h, particles = [], probability = 0.1,
+        var canvas, ctx, w, h, particles = [], probability = 0.099,
             xPoint, yPoint;
-        
-        
-        
-        
-        
-        function onLoad() {
+         function onLoad() {
             canvas = document.getElementById("canvas");
             ctx = canvas.getContext("2d");
             resizeCanvas();
@@ -40,9 +35,10 @@ window.addEventListener("resize", resizeCanvas, false);
         } 
         
         function update() {
-            if (particles.length < 500 && Math.random() < probability) {
+            if (particles.length < 200 && Math.random() < probability) {
                 createFirework();
             }
+            
             var alive = [];
             for (var i=0; i<particles.length; i++) {
                 if (particles[i].move()) {
@@ -65,7 +61,7 @@ window.addEventListener("resize", resizeCanvas, false);
         function createFirework() {
             xPoint = Math.random()*(w-200)+100;
             yPoint = Math.random()*(h-200)+100;
-            var nFire = Math.random()*50+100;
+            var nFire = Math.random() * 30 + 50;
             var c = "rgb("+(~~(Math.random()*200+55))+","
                  +(~~(Math.random()*200+55))+","+(~~(Math.random()*200+55))+")";
             for (var i=0; i<nFire; i++) {
@@ -94,12 +90,12 @@ window.addEventListener("resize", resizeCanvas, false);
         } 
         
         Particle.prototype = {
-    gravity: 0.1, // Increased gravity to make particles fall faster
+         gravity: 0.01, // Increased gravity to make particles fall faster
     move: function () {
         this.x += this.vx;
         this.vy += this.gravity;
         this.y += this.vy;
-        this.alpha -= 0.02; // Reduced alpha decrement for faster disappearance
+        this.alpha -= 0.02 // Reduced alpha decrement for faster disappearance
         if (this.x <= -this.w || this.x >= screen.width ||
             this.y >= screen.height ||
             this.alpha <= 0) {
