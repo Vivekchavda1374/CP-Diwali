@@ -697,7 +697,7 @@ body {
     font-size: 24px;
     margin: 0 auto;
     position: absolute;
-    top: 120px;
+    top: 100px;
   }
   
   .club1 {
@@ -708,7 +708,7 @@ body {
   }
   
   .club2 {
-    font-size: 22px;
+    font-size: 18px;
     color: #ffffff;
     line-height: 1.5;
     max-width: 80%;
