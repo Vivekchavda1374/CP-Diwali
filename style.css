@@ -38,6 +38,8 @@ body {
   color: white;
   font-size: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   line-height: 1.5;
 }
 
@@ -382,14 +384,14 @@ body {
 }
 
 .club1 {
-  font-size: 26px;
+  font-size: 22px;
   color: #fdb813;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .club2 {
-  font-size: 22px;
+  font-size: 19px;
   color: #ffffff;
   line-height: 1.5;
   max-width: 80%;
@@ -458,7 +460,7 @@ body {
   width: 100px;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 660px;
+  top: 600px;
   left: 50%;
 }
 
