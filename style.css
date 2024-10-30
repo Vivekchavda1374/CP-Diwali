@@ -384,14 +384,14 @@ body {
 }
 
 .club1 {
-  font-size: 22px;
+  font-size: 20px;
   color: #fdb813;
   margin-bottom: 10px;
   text-align: center;
 }
 
 .club2 {
-  font-size: 19px;
+  font-size: 15px;
   color: #ffffff;
   line-height: 1.5;
   max-width: 80%;
@@ -418,7 +418,7 @@ body {
 }
 
 .diwali {
-  font-size: 65px;
+  font-size: 67px;
   color: #f4c631;
   margin-bottom: 10px;
   animation: fadeIn 1s, bounce 1s infinite;
@@ -460,7 +460,7 @@ body {
   width: 100px;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 600px;
+  top: 620px;
   left: 50%;
 }
 
